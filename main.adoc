@@ -1,25 +1,18 @@
 include::locale/attributes.adoc[]
-= Spesifikasjonsmal
-:description: Mal for bruk til nye spesifikasjoner som er laga i asciidoc.
+= Stortingsmelding om datadrevet økonomi og innovasjon
 :doctype: book
 :docinfo:
 :icons: font
 :toc: left
-:toclevels: 3
+:toclevels: 4
 :sectanchors:
 :imagesdir: images
 :title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:sectlinks:
+:leveloffset:
+:table-stripes: even
 
-image::digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
-
-Publisert: 2020-03-05
-
-WARNING: Dette er mal-dokument for andre spesifikasjoner.
-
-include::shared/download.adoc[]
-
-// Innhold her. Feks ei fil pr kapittel:
-include::forord.adoc[]
-include::kapittel_1.adoc[]
+include::del1.adoc[]
+include::del2.adoc[]
 
 include::shared/stats.adoc[]
