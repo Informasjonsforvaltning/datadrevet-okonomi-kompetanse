@@ -5,7 +5,7 @@ include::locale/attributes.adoc[]
 :icons: font
 :toc: left
 :toclevels: 4
-:sectanchors:
+:sectlinks:
 :imagesdir: images
 :title-logo-image: image:digitaliseringsdirektoratet.png[pdfwidth=30vw]
 :sectlinks:
