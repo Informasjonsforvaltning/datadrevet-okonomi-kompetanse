@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <title>Stortingsmelding om datadrevet økonomi og innovasjon</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -140,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -162,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -208,13 +209,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -330,7 +328,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -393,7 +391,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -497,10 +495,10 @@ Oppsummeringene er delvis baserte på arrangørens notater, og er ikke verifiser
 </div>
 </div>
 <div class="sect1">
-<h2 id="_del_1_innledning_og_program_med_innlegg"><a class="anchor" href="#_del_1_innledning_og_program_med_innlegg"></a><a class="link" href="#_del_1_innledning_og_program_med_innlegg">Del 1 Innledning og program med innlegg</a></h2>
+<h2 id="_del_1_innledning_og_program_med_innlegg"><a class="link" href="#_del_1_innledning_og_program_med_innlegg">Del 1 Innledning og program med innlegg</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_linda_hofstad_helleland_kommunal_og_moderniseringsdepartementet"><a class="anchor" href="#_linda_hofstad_helleland_kommunal_og_moderniseringsdepartementet"></a><a class="link" href="#_linda_hofstad_helleland_kommunal_og_moderniseringsdepartementet">Linda Hofstad Helleland, Kommunal- og moderniseringsdepartementet</a></h3>
+<h3 id="_linda_hofstad_helleland_kommunal_og_moderniseringsdepartementet"><a class="link" href="#_linda_hofstad_helleland_kommunal_og_moderniseringsdepartementet">Linda Hofstad Helleland, Kommunal- og moderniseringsdepartementet</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413573145" frameborder="0" allowfullscreen></iframe>
@@ -514,7 +512,7 @@ Oppsummeringene er delvis baserte på arrangørens notater, og er ikke verifiser
 </div>
 </div>
 <div class="sect2">
-<h3 id="_aase_marthe_johansen_horrigmo_statssekretær_kunnskapsdepartementet"><a class="anchor" href="#_aase_marthe_johansen_horrigmo_statssekretær_kunnskapsdepartementet"></a><a class="link" href="#_aase_marthe_johansen_horrigmo_statssekretær_kunnskapsdepartementet">Aase Marthe Johansen Horrigmo, statssekretær Kunnskapsdepartementet.</a></h3>
+<h3 id="_aase_marthe_johansen_horrigmo_statssekretær_kunnskapsdepartementet"><a class="link" href="#_aase_marthe_johansen_horrigmo_statssekretær_kunnskapsdepartementet">Aase Marthe Johansen Horrigmo, statssekretær Kunnskapsdepartementet.</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413573398" frameborder="0" allowfullscreen></iframe>
@@ -528,7 +526,7 @@ Oppsummeringene er delvis baserte på arrangørens notater, og er ikke verifiser
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lars_nerdrum_sekretariatsleder_for_kompetansebehovsutvalget"><a class="anchor" href="#_lars_nerdrum_sekretariatsleder_for_kompetansebehovsutvalget"></a><a class="link" href="#_lars_nerdrum_sekretariatsleder_for_kompetansebehovsutvalget">Lars Nerdrum, sekretariatsleder for Kompetansebehovsutvalget</a></h3>
+<h3 id="_lars_nerdrum_sekretariatsleder_for_kompetansebehovsutvalget"><a class="link" href="#_lars_nerdrum_sekretariatsleder_for_kompetansebehovsutvalget">Lars Nerdrum, sekretariatsleder for Kompetansebehovsutvalget</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413574393" frameborder="0" allowfullscreen></iframe>
@@ -542,7 +540,7 @@ Oppsummeringene er delvis baserte på arrangørens notater, og er ikke verifiser
 </div>
 </div>
 <div class="sect2">
-<h3 id="_alexandra_bech_gjørv_konsernsjef_sintef_og_leder_for_ekspertgruppe_om_datadeling_i_næringslivet"><a class="anchor" href="#_alexandra_bech_gjørv_konsernsjef_sintef_og_leder_for_ekspertgruppe_om_datadeling_i_næringslivet"></a><a class="link" href="#_alexandra_bech_gjørv_konsernsjef_sintef_og_leder_for_ekspertgruppe_om_datadeling_i_næringslivet">Alexandra Bech Gjørv, konsernsjef Sintef og leder for ekspertgruppe om datadeling i næringslivet</a></h3>
+<h3 id="_alexandra_bech_gjørv_konsernsjef_sintef_og_leder_for_ekspertgruppe_om_datadeling_i_næringslivet"><a class="link" href="#_alexandra_bech_gjørv_konsernsjef_sintef_og_leder_for_ekspertgruppe_om_datadeling_i_næringslivet">Alexandra Bech Gjørv, konsernsjef Sintef og leder for ekspertgruppe om datadeling i næringslivet</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413575184" frameborder="0" allowfullscreen></iframe>
@@ -563,7 +561,7 @@ Rapporten utfordrer også stat og kommune til å se på hvordan næringsliv kan 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_camilla_tepfers_partner_infuture"><a class="anchor" href="#_camilla_tepfers_partner_infuture"></a><a class="link" href="#_camilla_tepfers_partner_infuture">Camilla Tepfers, partner INFuture</a></h3>
+<h3 id="_camilla_tepfers_partner_infuture"><a class="link" href="#_camilla_tepfers_partner_infuture">Camilla Tepfers, partner INFuture</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413575816" frameborder="0" allowfullscreen></iframe>
@@ -577,7 +575,7 @@ Rapporten utfordrer også stat og kommune til å se på hvordan næringsliv kan 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_morten_dæhlen_professor_i_informatikk_og_dekan_universitetet_i_oslo"><a class="anchor" href="#_morten_dæhlen_professor_i_informatikk_og_dekan_universitetet_i_oslo"></a><a class="link" href="#_morten_dæhlen_professor_i_informatikk_og_dekan_universitetet_i_oslo">Morten Dæhlen, professor i informatikk og dekan, Universitetet i Oslo</a></h3>
+<h3 id="_morten_dæhlen_professor_i_informatikk_og_dekan_universitetet_i_oslo"><a class="link" href="#_morten_dæhlen_professor_i_informatikk_og_dekan_universitetet_i_oslo">Morten Dæhlen, professor i informatikk og dekan, Universitetet i Oslo</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413576447" frameborder="0" allowfullscreen></iframe>
@@ -651,10 +649,10 @@ Vi går spennende tider i møte i en verden som blir stadig mer drevet av kunnsk
 </div>
 </div>
 <div class="sect1">
-<h2 id="_del_2_innspill_på_3_min_per_aktør"><a class="anchor" href="#_del_2_innspill_på_3_min_per_aktør"></a><a class="link" href="#_del_2_innspill_på_3_min_per_aktør">Del 2 Innspill på 3 min per aktør</a></h2>
+<h2 id="_del_2_innspill_på_3_min_per_aktør"><a class="link" href="#_del_2_innspill_på_3_min_per_aktør">Del 2 Innspill på 3 min per aktør</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_ketil_widerberg_oslo_cancer_cluster"><a class="anchor" href="#_ketil_widerberg_oslo_cancer_cluster"></a><a class="link" href="#_ketil_widerberg_oslo_cancer_cluster">Ketil Widerberg, Oslo Cancer Cluster</a></h3>
+<h3 id="_ketil_widerberg_oslo_cancer_cluster"><a class="link" href="#_ketil_widerberg_oslo_cancer_cluster">Ketil Widerberg, Oslo Cancer Cluster</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413566821" frameborder="0" allowfullscreen></iframe>
@@ -703,7 +701,7 @@ Resultatet kan bli digital omstilling, økonomisk gevinst og bedre helse.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_christen_krogh_høyskolen_kristiania"><a class="anchor" href="#_christen_krogh_høyskolen_kristiania"></a><a class="link" href="#_christen_krogh_høyskolen_kristiania">Christen Krogh, Høyskolen Kristiania</a></h3>
+<h3 id="_christen_krogh_høyskolen_kristiania"><a class="link" href="#_christen_krogh_høyskolen_kristiania">Christen Krogh, Høyskolen Kristiania</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413569046" frameborder="0" allowfullscreen></iframe>
@@ -741,7 +739,7 @@ Resultatet kan bli digital omstilling, økonomisk gevinst og bedre helse.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_oddrun_samdal_universitetet_i_bergen"><a class="anchor" href="#_oddrun_samdal_universitetet_i_bergen"></a><a class="link" href="#_oddrun_samdal_universitetet_i_bergen">Oddrun Samdal, Universitetet i Bergen</a></h3>
+<h3 id="_oddrun_samdal_universitetet_i_bergen"><a class="link" href="#_oddrun_samdal_universitetet_i_bergen">Oddrun Samdal, Universitetet i Bergen</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413569777" frameborder="0" allowfullscreen></iframe>
@@ -759,7 +757,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_hans_petter_bøe_rebokjetil_tvedt_norsk_industri"><a class="anchor" href="#_hans_petter_bøe_rebokjetil_tvedt_norsk_industri"></a><a class="link" href="#_hans_petter_bøe_rebokjetil_tvedt_norsk_industri">Hans Petter Bøe Rebo/Kjetil Tvedt, Norsk industri</a></h3>
+<h3 id="_hans_petter_bøe_rebokjetil_tvedt_norsk_industri"><a class="link" href="#_hans_petter_bøe_rebokjetil_tvedt_norsk_industri">Hans Petter Bøe Rebo/Kjetil Tvedt, Norsk industri</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413571472" frameborder="0" allowfullscreen></iframe>
@@ -770,7 +768,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lise_lyngsnes_randeberg_tekna"><a class="anchor" href="#_lise_lyngsnes_randeberg_tekna"></a><a class="link" href="#_lise_lyngsnes_randeberg_tekna">Lise Lyngsnes Randeberg, Tekna</a></h3>
+<h3 id="_lise_lyngsnes_randeberg_tekna"><a class="link" href="#_lise_lyngsnes_randeberg_tekna">Lise Lyngsnes Randeberg, Tekna</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413572051" frameborder="0" allowfullscreen></iframe>
@@ -781,7 +779,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_sven_størmer_thaulow_schibsted_asa"><a class="anchor" href="#_sven_størmer_thaulow_schibsted_asa"></a><a class="link" href="#_sven_størmer_thaulow_schibsted_asa">Sven Størmer Thaulow, Schibsted ASA</a></h3>
+<h3 id="_sven_størmer_thaulow_schibsted_asa"><a class="link" href="#_sven_størmer_thaulow_schibsted_asa">Sven Størmer Thaulow, Schibsted ASA</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413573654" frameborder="0" allowfullscreen></iframe>
@@ -792,7 +790,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_kimberly_lein_mathisen_microsoft_norge_as"><a class="anchor" href="#_kimberly_lein_mathisen_microsoft_norge_as"></a><a class="link" href="#_kimberly_lein_mathisen_microsoft_norge_as">Kimberly Lein-Mathisen, Microsoft Norge AS</a></h3>
+<h3 id="_kimberly_lein_mathisen_microsoft_norge_as"><a class="link" href="#_kimberly_lein_mathisen_microsoft_norge_as">Kimberly Lein-Mathisen, Microsoft Norge AS</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413574298" frameborder="0" allowfullscreen></iframe>
@@ -803,7 +801,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_roger_haga_heimli_landsorganisasjonen_i_norge"><a class="anchor" href="#_roger_haga_heimli_landsorganisasjonen_i_norge"></a><a class="link" href="#_roger_haga_heimli_landsorganisasjonen_i_norge">Roger Haga Heimli, Landsorganisasjonen i Norge</a></h3>
+<h3 id="_roger_haga_heimli_landsorganisasjonen_i_norge"><a class="link" href="#_roger_haga_heimli_landsorganisasjonen_i_norge">Roger Haga Heimli, Landsorganisasjonen i Norge</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413577374" frameborder="0" allowfullscreen></iframe>
@@ -817,7 +815,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_øystein_eriksen_søreide_abelia"><a class="anchor" href="#_øystein_eriksen_søreide_abelia"></a><a class="link" href="#_øystein_eriksen_søreide_abelia">Øystein Eriksen Søreide, Abelia</a></h3>
+<h3 id="_øystein_eriksen_søreide_abelia"><a class="link" href="#_øystein_eriksen_søreide_abelia">Øystein Eriksen Søreide, Abelia</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413578343" frameborder="0" allowfullscreen></iframe>
@@ -828,7 +826,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ingrid_lorange_siva_sf"><a class="anchor" href="#_ingrid_lorange_siva_sf"></a><a class="link" href="#_ingrid_lorange_siva_sf">Ingrid Lorange, Siva SF</a></h3>
+<h3 id="_ingrid_lorange_siva_sf"><a class="link" href="#_ingrid_lorange_siva_sf">Ingrid Lorange, Siva SF</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413579694" frameborder="0" allowfullscreen></iframe>
@@ -866,7 +864,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_anniken_tømte_nho"><a class="anchor" href="#_anniken_tømte_nho"></a><a class="link" href="#_anniken_tømte_nho">Anniken Tømte, NHO</a></h3>
+<h3 id="_anniken_tømte_nho"><a class="link" href="#_anniken_tømte_nho">Anniken Tømte, NHO</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413580133" frameborder="0" allowfullscreen></iframe>
@@ -901,7 +899,7 @@ Kompetansesporet – som gir forskningsbasert utdanning: i alle disse er det en 
 </div>
 </div>
 <div class="sect2">
-<h3 id="_runa_opdal_kerr_finans_norge"><a class="anchor" href="#_runa_opdal_kerr_finans_norge"></a><a class="link" href="#_runa_opdal_kerr_finans_norge">Runa Opdal Kerr, Finans Norge</a></h3>
+<h3 id="_runa_opdal_kerr_finans_norge"><a class="link" href="#_runa_opdal_kerr_finans_norge">Runa Opdal Kerr, Finans Norge</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413580974" frameborder="0" allowfullscreen></iframe>
@@ -931,7 +929,7 @@ Takk for oppmerksomheten!</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_kyrre_lekve_simula_research_laboratory"><a class="anchor" href="#_kyrre_lekve_simula_research_laboratory"></a><a class="link" href="#_kyrre_lekve_simula_research_laboratory">Kyrre Lekve, Simula Research Laboratory</a></h3>
+<h3 id="_kyrre_lekve_simula_research_laboratory"><a class="link" href="#_kyrre_lekve_simula_research_laboratory">Kyrre Lekve, Simula Research Laboratory</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413582584" frameborder="0" allowfullscreen></iframe>
@@ -988,7 +986,7 @@ Sterk kobling mellom forskning og undervisning</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_marie_elise_axelsen_ks"><a class="anchor" href="#_marie_elise_axelsen_ks"></a><a class="link" href="#_marie_elise_axelsen_ks">Marie Elise Axelsen, KS</a></h3>
+<h3 id="_marie_elise_axelsen_ks"><a class="link" href="#_marie_elise_axelsen_ks">Marie Elise Axelsen, KS</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413583998" frameborder="0" allowfullscreen></iframe>
@@ -1011,7 +1009,7 @@ Når det gjelder det fremtidige kompetansebehov vil vi også vise til tre NOU´e
 </div>
 </div>
 <div class="sect2">
-<h3 id="_bjørn_taale_sandberg_telenor_asa"><a class="anchor" href="#_bjørn_taale_sandberg_telenor_asa"></a><a class="link" href="#_bjørn_taale_sandberg_telenor_asa">Bjørn Taale Sandberg, Telenor ASA</a></h3>
+<h3 id="_bjørn_taale_sandberg_telenor_asa"><a class="link" href="#_bjørn_taale_sandberg_telenor_asa">Bjørn Taale Sandberg, Telenor ASA</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413584289" frameborder="0" allowfullscreen></iframe>
@@ -1048,7 +1046,7 @@ Uten løft av datakompetanse i offentlig sektor vil det være vanskelig å reali
 </div>
 </div>
 <div class="sect2">
-<h3 id="_paul_chaffey_statssektretær_kommunal_og_moderniseringsdepartementet"><a class="anchor" href="#_paul_chaffey_statssektretær_kommunal_og_moderniseringsdepartementet"></a><a class="link" href="#_paul_chaffey_statssektretær_kommunal_og_moderniseringsdepartementet">Paul Chaffey, statssektretær, Kommunal- og moderniseringsdepartementet</a></h3>
+<h3 id="_paul_chaffey_statssektretær_kommunal_og_moderniseringsdepartementet"><a class="link" href="#_paul_chaffey_statssektretær_kommunal_og_moderniseringsdepartementet">Paul Chaffey, statssektretær, Kommunal- og moderniseringsdepartementet</a></h3>
 <div class="videoblock">
 <div class="content">
 <iframe width="640" height="360" src="https://player.vimeo.com/video/413585274" frameborder="0" allowfullscreen></iframe>
@@ -1074,7 +1072,7 @@ ga('send', 'pageview');
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-28 11:37:55 UTC
+Sist oppdatert 2024-08-08 13:48:32 UTC
 </div>
 </div>
 </body>
